@@ -4,7 +4,7 @@ Library Android modular untuk lifecycle aplikasi, logging, privasi layar Recents
 
 ## Pakai dari proyek lain
 
-Setelah repository publik diberi tag rilis, tambahkan JitPack di `settings.gradle.kts` proyek pemakai:
+Tambahkan JitPack di `settings.gradle.kts` proyek pemakai:
 
 ```kotlin
 dependencyResolutionManagement {
@@ -16,14 +16,14 @@ dependencyResolutionManagement {
 }
 ```
 
-Tambahkan modul yang dibutuhkan di `build.gradle.kts` aplikasi. Ganti `OWNER` dengan nama akun GitHub dan `VERSION` dengan tag rilis, misalnya `v0.1.0`:
+Tambahkan modul yang dibutuhkan di `build.gradle.kts` aplikasi:
 
 ```kotlin
 dependencies {
-    implementation("com.github.OWNER.Odyctivity:odyctivity-core:VERSION")
-    implementation("com.github.OWNER.Odyctivity:odyctivity-logging:VERSION")
-    implementation("com.github.OWNER.Odyctivity:odyctivity-security:VERSION")
-    // Opsional: implementation("com.github.OWNER.Odyctivity:odyctivity-telemetry:VERSION")
+    implementation("com.github.nopaleinhere.Odyctivity:odyctivity-core:v0.1.0")
+    implementation("com.github.nopaleinhere.Odyctivity:odyctivity-logging:v0.1.0")
+    implementation("com.github.nopaleinhere.Odyctivity:odyctivity-security:v0.1.0")
+    // Opsional: implementation("com.github.nopaleinhere.Odyctivity:odyctivity-telemetry:v0.1.0")
 }
 ```
 
@@ -62,4 +62,4 @@ Keempat modul library memakai `maven-publish` dan menerbitkan varian `release` b
 ./gradlew build publishToMavenLocal
 ```
 
-Publikasikan tag Git, lalu buka `https://jitpack.io/#OWNER/Odyctivity` untuk memicu dan memeriksa build rilis.
+Publikasikan tag Git, lalu buka `https://jitpack.io/#nopaleinhere/Odyctivity` untuk memicu dan memeriksa build rilis.
